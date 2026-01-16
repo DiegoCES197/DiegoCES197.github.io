@@ -1,0 +1,103 @@
+2026-01-15 13:42:22,210 - __main__ - ERROR - [app.py:386] - Fallo al procesar imagen+texto: 'NoneType' object is not subscriptable
+None
+2026-01-15 13:42:22,210 - __main__ - ERROR - [app.py:528] - Validation error: No se pudo procesar imagen y texto: 'NoneType' object is not subscriptable
+None
+2026-01-15 13:42:22,213 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 13:44:06,117 - __main__ - ERROR - [app.py:382] - Fallo al procesar imagen+texto con processor: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 13:44:06,118 - __main__ - ERROR - [app.py:525] - Validation error: Processor Gemma3 falló: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 13:44:06,133 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 13:46:29,609 - __main__ - ERROR - [app.py:400] - Token mismatch: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 13:46:29,610 - __main__ - ERROR - [app.py:401] - Expected token: '<image_soft_token>' | Present in prompt: True
+None
+2026-01-15 13:46:29,610 - __main__ - ERROR - [app.py:402] - Prompt (primeros 500 chars): <image_soft_token>
+
+
+
+TAREA: Eres radiólogo. Edita esta plantilla basándote en la imagen. Devuelve SOLO JSON válido dentro de un bloque ```json```.
+
+PLANTILLA A EDITAR:
+--- PLANTILLA ---
+TOMOGRAFÍA DE ALTA RESOLUCIÓN
+
+INDICACIÓN:
+
+TÉCNICA: En tomógrafo multidetector se adquieren cortes helicoidales del tórax en protocolo de alta resolución, se incluyen reconstrucciones multiplanares en fase inspiratoria y espiratoria.
+
+DOSIS DE RADIACIÓN: mSv.
+
+HALLAZGOS:
+La porción visible del cuello es normal.
+None
+2026-01-15 13:46:29,635 - __main__ - ERROR - [app.py:555] - Validation error: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 13:46:29,638 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 13:48:23,282 - __main__ - ERROR - [app.py:534] - Validation error: The following `model_kwargs` are not used by the model: ['num_crops'] (note: typos in the generate arguments will also show up in this list)
+None
+2026-01-15 13:48:23,299 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 13:49:54,748 - __main__ - ERROR - [app.py:542] - Validation error: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 13:49:54,803 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 14:06:43,179 - __main__ - ERROR - [app.py:392] - Fallo al procesar imagen+texto con processor: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 14:06:43,193 - __main__ - ERROR - [app.py:535] - Validation error: Processor Gemma3 falló: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 14:06:43,195 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 18:41:20,682 - __main__ - ERROR - [app.py:350] - Error durante model.generate(): Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 18:41:20,683 - __main__ - ERROR - [app.py:351] - Input shapes: [('input_ids', torch.Size([1, 1579])), ('attention_mask', torch.Size([1, 1579])), ('token_type_ids', torch.Size([1, 1579])), ('pixel_values', torch.Size([1, 3, 896, 896]))]
+None
+2026-01-15 18:41:20,694 - __main__ - ERROR - [app.py:582] - Validation error: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 18:41:20,697 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 18:46:00,683 - __main__ - ERROR - [app.py:422] - Fallo al procesar imagen+texto con processor: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 18:46:00,684 - __main__ - ERROR - [app.py:577] - Validation error: Processor Gemma3 falló: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 18:46:00,687 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 18:47:26,335 - __main__ - ERROR - [app.py:423] - Fallo al procesar imagen+texto con processor: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 18:47:26,336 - __main__ - ERROR - [app.py:578] - Validation error: Processor Gemma3 falló: Prompt contained 0 image tokens but received 1 images.
+None
+2026-01-15 18:47:26,338 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 18:51:57,285 - __main__ - ERROR - [app.py:350] - Error durante model.generate(): Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 18:51:57,285 - __main__ - ERROR - [app.py:351] - Input shapes: [('input_ids', torch.Size([1, 1579])), ('attention_mask', torch.Size([1, 1579])), ('token_type_ids', torch.Size([1, 1579])), ('pixel_values', torch.Size([1, 3, 896, 896]))]
+None
+2026-01-15 18:51:57,285 - __main__ - ERROR - [app.py:455] - Error en generate_with_beam_search: ValueError: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 18:51:57,285 - __main__ - ERROR - [app.py:581] - Validation error: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 18:51:57,290 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 19:01:16,973 - __main__ - ERROR - [app.py:350] - Error durante model.generate(): Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:01:16,973 - __main__ - ERROR - [app.py:351] - Input shapes: [('input_ids', torch.Size([1, 1579])), ('attention_mask', torch.Size([1, 1579])), ('token_type_ids', torch.Size([1, 1579])), ('pixel_values', torch.Size([1, 3, 896, 896]))]
+None
+2026-01-15 19:01:16,973 - __main__ - ERROR - [app.py:455] - Error en generate_with_beam_search: ValueError: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:01:16,974 - __main__ - ERROR - [app.py:581] - Validation error: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:01:16,977 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None
+2026-01-15 19:03:54,399 - __main__ - ERROR - [app.py:363] - Error durante model.generate(): Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:03:54,399 - __main__ - ERROR - [app.py:364] - Input shapes: [('input_ids', torch.Size([1, 1575])), ('attention_mask', torch.Size([1, 1575])), ('token_type_ids', torch.Size([1, 1575])), ('pixel_values', torch.Size([1, 3, 896, 896]))]
+None
+2026-01-15 19:03:54,400 - __main__ - ERROR - [app.py:482] - Error en generate_with_beam_search: ValueError: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:03:54,400 - __main__ - ERROR - [app.py:608] - Validation error: Image features and image tokens do not match: tokens: 0, features 256
+None
+2026-01-15 19:03:54,409 - __main__ - ERROR - [app.py:82] - Contexto de error guardado en error_context.json
+None

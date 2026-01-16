@@ -1,0 +1,5 @@
+.venv/
+hf_cache/
+*.safetensors
+*.pt
+__pycache__/

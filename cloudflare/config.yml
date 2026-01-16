@@ -1,0 +1,8 @@
+tunnel: 137d8917-5cfa-4ea3-b4a9-91d460863acd
+credentials-file: C:\Users\DiegoP\.cloudflared\137d8917-5cfa-4ea3-b4a9-91d460863acd.json
+
+ingress:
+  - hostname: app.radiapp.me
+    service: http://localhost:7860
+
+  - service: http_status:404

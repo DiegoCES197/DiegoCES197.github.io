@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-01-15T19:03:54.400986",
+  "error_type": "ValueError",
+  "error_message": "Image features and image tokens do not match: tokens: 0, features 256",
+  "traceback": "Traceback (most recent call last):\n  File \"d:\\RadiAPP\\app.py\", line 479, in generate\n    out = generate_with_beam_search(inputs, model, processor, int(max_new_tokens), num_beams=1)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"d:\\RadiAPP\\app.py\", line 352, in generate_with_beam_search\n    return model.generate(\n           ^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\torch\\utils\\_contextlib.py\", line 120, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\generation\\utils.py\", line 2566, in generate\n    result = decoding_method(\n             ^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\generation\\utils.py\", line 2786, in _sample\n    outputs = self(**model_inputs, return_dict=True)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1775, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1786, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\accelerate\\hooks.py\", line 175, in new_forward\n    output = module._old_forward(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\models\\gemma3\\modeling_gemma3.py\", line 1100, in forward\n    outputs = self.model(\n              ^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1775, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1786, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\utils\\generic.py\", line 918, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\models\\gemma3\\modeling_gemma3.py\", line 910, in forward\n    special_image_mask = self.get_placeholder_mask(\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\RadiAPP\\.venv\\Lib\\site-packages\\transformers\\models\\gemma3\\modeling_gemma3.py\", line 829, in get_placeholder_mask\n    raise ValueError(\nValueError: Image features and image tokens do not match: tokens: 0, features 256\n",
+  "device_info": {
+    "cuda_available": true,
+    "hip_version": "7.1.52802-561cc400e1",
+    "device_count": 2,
+    "torch_version": "2.9.0+rocmsdk20251116"
+  },
+  "memory_info": {
+    "process_rss_mb": 8272.94140625,
+    "gpu_allocated_mb": null,
+    "gpu_reserved_mb": null,
+    "gpu_0_allocated_mb": 4183.9892578125,
+    "gpu_0_reserved_mb": 6646.0,
+    "gpu_1_allocated_mb": 4140.4775390625,
+    "gpu_1_reserved_mb": 4142.0
+  },
+  "context": {
+    "modalidad": "TC",
+    "region": "tórax",
+    "template_file": "TCAR.json",
+    "error_location": "validation"
+  }
+}
