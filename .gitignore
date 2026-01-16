@@ -3,3 +3,5 @@ hf_cache/
 *.safetensors
 *.pt
 __pycache__/
+.env
+*.log
